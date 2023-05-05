@@ -1,5 +1,6 @@
 import "./App.scss";
 import { useState } from "react";
+import Button from './components/Button'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -28,11 +29,10 @@ function App() {
         <h1 className="--text-light">React Counter App</h1>
         <p className="count --my2 --text-md --text-light --fw-bold" style={{color: color}}>{ count }</p>
         <div className="buttons">
-          <button className="--btn --btn-danger" onClick={handleSubstract}>- Substract</button>
-          <button className="--btn" onClick={handleReset}>Reset</button>
-          <button className="--btn --btn-success" onClick={handleAdd}>+ Add</button>
+          <Button className="--btn --btn-danger" onClick={handleSubstract} text='- Substract' />
+          <Button className="--btn" onClick={handleReset} text="Reset" />
+          <Button className="--btn --btn-success" onClick={handleAdd} text="+ Add" />
         </div>
-
       </div>
     </section>
   );
