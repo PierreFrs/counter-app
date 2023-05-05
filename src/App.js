@@ -13,6 +13,10 @@ function App() {
   const handleAdd = () => {
     setCount(count + 1);
   }
+  const handleLucky = () => {
+    const randomNum = Math.floor(Math.random() * (100 - (-100) +1)) + (-100);
+    setCount(randomNum);
+  }
 
   let color = "#fff";
   if (count >=1) {
@@ -32,6 +36,7 @@ function App() {
           <Button className="--btn --btn-danger" onClick={handleSubstract} text='- Substract' />
           <Button className="--btn" onClick={handleReset} text="Reset" />
           <Button className="--btn --btn-success" onClick={handleAdd} text="+ Add" />
+          <Button className="--btn --btn-golden" onClick={handleLucky} text="Lucky Button" />
         </div>
       </div>
     </section>

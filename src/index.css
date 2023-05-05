@@ -13,6 +13,7 @@
 
   --color-purple: #9d0191;
   --color-orange: #ff7722;
+  --color-gold: #ffd700;
 
   --color-primary: #007bff;
   --color-success: #28a745;
@@ -315,6 +316,13 @@ p {
   color: #fff;
   background: #28a745;
 }
+
+.--btn-golden {
+  color: #fff;
+  background: #ffd700;
+}
+
+
 
 /* Background */
 .--bg-light {
